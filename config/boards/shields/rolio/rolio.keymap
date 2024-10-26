@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/backlight.h>
 
 
-#define MACOS     0
+#define BASE      0
 #define FKEYS     1
 #define NUMBERS   2
 #define WINDOWS   3
@@ -328,13 +328,12 @@
             label = "Base";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-//-----------------------------------------------------------------------+                            +--------------------------------------------------------------------//
-//                |         |          |           |          |          |                            |       |       |           |         |          |                   // 
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                        &kp J         &kp L          &kp U         &kp Y         &kp SEMI         &mt BSLH PIPE
-  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                        &kp M         &hmr LSHFT N   &hmr LCTRL E  &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &kp C         &kp D         &kp V      &kp F16      &kp F17  &kp K     &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
-                                  &kp LALT      &kp LCTRL     &kp BSPC      &kp SPACE  &td0         &td1     &kp ENTER &kp TAB        &kp RCTRL     &kp DEL
-//                    +----------|-----------|----------|--------------------+    +-----------|-------|--------|-----------|---------+                      //
+//--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                              &kp J         &kp L          &kp U         &kp Y         &kp SEMI         &mt BSLH PIPE
+  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                              &kp M         &hmr LSHFT N   &hmr LCTRL E  &hmr LALT I   &hmr RGUI O      &mt DQT SQT
+  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17  &kp K     &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+                                  &kp LALT      &kp LCTRL     &kp BSPC      &kp SPACE    &td0         &td1     &kp ENTER &kp TAB        &kp RCTRL     &kp DEL
+//                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
         };
 
