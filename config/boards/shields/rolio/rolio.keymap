@@ -11,9 +11,9 @@
 #include <dt-bindings/zmk/backlight.h>
 
 
-#define BASE      0
-#define FKEYS     1
-#define NUMBERS   2
+#define DEFAULT   0
+#define LOWER     1
+#define RAISE     2
 #define WINDOWS   3
 #define W_FKEYS   4
 #define W_NUMBERS 5
@@ -28,13 +28,9 @@
 
     conditional_layers {
         compatible = "zmk,conditional-layers";
-        win_fkeys {
-            if-layers = <WINDOWS FKEYS>;
-            then-layer = <W_FKEYS>;
-        };
-        win_numbers {
-            if-layers = <WINDOWS NUMBERS>;
-            then-layer = <W_NUMBERS>;
+        tri_layer {
+            if-layers = <LOWER RAISE>;
+            then-layer = <KB_CONFIG>;
         };
     };
 
@@ -68,7 +64,7 @@
             label = "TAP_DANCE_0";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mo FKEYS>, <&tog FKEYS>, <&tog KB_CONFIG>;
+            bindings = <&mo LOWER>, <&tog LOWER>, <&tog KB_CONFIG>;
         };
         // Toggle Numbers layer
         td1: tap_dance_1 {
@@ -76,7 +72,7 @@
             label = "TAP_DANCE_1";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mo NUMBERS>, <&tog MATHS>, <&tog NUMBERS>;
+            bindings = <&mo RAISE>, <&tog MATHS>, <&tog RAISE>;
         };
         // Toggle capsword left
         td2: tap_dance_2 {
@@ -128,20 +124,6 @@
             quick_tap_ms = <0>;
             flavor = "tap-preferred";
             bindings = <&w_bsp_word>, <&kp>;
-        };
-        //Mac OS Zoom
-        mac_zoom: mac_zoom {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "MAC_ZOOM";
-            #sensor-binding-cells = <0>;
-            bindings = <&zoom_in>, <&zoom_out>;
-        };
-        //Windows OS Zoom
-        win_zoom: win_zoom {
-            compatible = "zmk,behavior-sensor-rotate";
-            label = "WINDOWS_ZOOM";
-            #sensor-binding-cells = <0>;
-            bindings = <&w_zoom_in>, <&w_zoom_out>;
         };
     };
 
@@ -329,16 +311,16 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                              &kp J         &kp L          &kp U         &kp Y         &kp SEMI         &mt BSLH PIPE
-  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                              &kp M         &hmr LSHFT N   &hmr LCTRL E  &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17  &kp K     &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
-                                  &kp LALT      &kp LCTRL     &kp BSPC      &kp SPACE    &td0         &td1     &kp ENTER &kp TAB        &kp RCTRL     &kp DEL
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                &kp J         &kp L          &kp U         &kp Y         &kp SEMI         &mt BSLH PIPE
+  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                &kp M         &hmr LSHFT N   &hmr LCTRL E  &hmr LALT I   &hmr RGUI O      &mt DQT SQT
+  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17    &kp K     &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+                                  &kp LALT      &kp LCTRL     &kp BSPC      &kp SPACE    &mo LOWER    &mo RAISE  &kp ENTER &kp TAB        &kp RCTRL     &kp DEL
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
         };
 
-        f_keys_layer {
-            label = "F Keys";
+        lower_layer {
+            label = "Lower";
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mac_zoom>;
             bindings = <
 //-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
@@ -355,8 +337,8 @@
 
         };
 
-        numbers_layer {
-            label = "Numbers";
+        raise_layer {
+            label = "Raise";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //-------------------------------------------------------------------------------+                      +----------------------------------------------------------------------------//
