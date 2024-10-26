@@ -77,6 +77,14 @@
             bindings = <&kp BSPC>, <&kp DEL>;
             mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
         };
+        tmt: tap_prefered_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
         // // Toggle Numbers layer
         // td1: tap_dance_1 {
         //     compatible = "zmk,behavior-tap-dance";
@@ -321,9 +329,9 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                    &kp J         &kp L          &kp U            &kp Y         &kp SEMI         &mt BSLH PIPE
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                    &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt BSLH PIPE
   &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                    &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+  &none             &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt RC(V) V &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
                                   &lbr          &none         &backdel      &kp SPACE    &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &mt UNDER MINUS  &rbr
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
