@@ -332,11 +332,11 @@
 //          |         |          |           |          |        |                            |       |       |           |         |          |           // 
   &kp GRAVE   &kp Q           &kp W      &kp F        &kp P     &kp B                                 &kp J   &kp L     &kp U      &kp Y     &kp SEMI     &backspace_word 0 BSPC
 //          |         |          |           |          |        |                            |       |       |           |         |          |           //
-  &kp TAB     &hml LGUI A   &hml LALT R      &hml LCTRL S        &hml LSHFT T     &kp G               &kp M   &hmr LSHFT N     &hmr LCTRL E      &hmr LALT I    &hmr RGUI O         &kp SQT
+  &kp ESC     &hml LGUI A   &hml LALT R      &hml LCTRL S        &hml LSHFT T     &kp G               &kp M   &hmr LSHFT N     &hmr LCTRL E      &hmr LALT I    &hmr RGUI O         &mt DQT SQT
 //          |         |          |           |          |        +-----------+    +-----------|       |       |           |         |          |           //
     &td2      &kp Z           &kp X      &kp C        &kp D     &kp V     &kp F16          &kp F17    &kp K   &kp H   &kp COMMA   &kp DOT    &kp FSLH     &td3
 //--------------------|          |           |          |        |           |    |           |       |       |           |--------------------------------//  
-                        &kp LALT   &kp LCTRL     &td4     &td0     &kp ENTER        &kp SPACE   &td1    &td5    &kp RCTRL   &kp DEL
+                        &kp LALT   &kp LCTRL     &kp BSPC     &kp SPACE     &td0        &td1   &kp ENTER    &kp TAB    &kp RCTRL   &kp DEL
 //                    +----------|-----------|----------|--------------------+    +-----------|-------|--------|-----------|---------+                      //
             >;
         };
