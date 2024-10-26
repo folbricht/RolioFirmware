@@ -313,7 +313,7 @@
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
   &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                &kp J         &kp L          &kp U         &kp Y         &kp SEMI         &mt BSLH PIPE
   &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                &kp M         &hmr LSHFT N   &hmr LCTRL E  &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17    &kp K     &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17    &kp K         &kp H          &mt LT COMMA  &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
                                   &kp LALT      &kp LCTRL     &kp BSPC      &kp SPACE    &mo LOWER    &mo RAISE  &kp ENTER &kp TAB        &kp RCTRL     &kp DEL
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
@@ -321,7 +321,7 @@
 
         lower_layer {
             label = "Lower";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &mac_zoom>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
 //          |            |            |              |            |              |                           |          |          |           |         |           |           // 
@@ -373,7 +373,7 @@
 
         windows_fkeys_layer {
             label = "F Keys";
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &win_zoom>;
+            sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //-----------------------------------------------------------------+                        +------------------------------------------------------------------//
 //          |          |          |          |          |          |                        |          |          |          |          |          |           // 
