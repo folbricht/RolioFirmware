@@ -315,10 +315,10 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                &kp J         &kp L          &kp U            &kp Y         &kp SEMI         &mt BSLH PIPE
-  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp F16      &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
-                                  &lbr          &none         &kp BSPC      &kp SPACE    &mo LOWER    &mo RAISE  &kp ENTER     &kp TAB        &mt UNDER MINUS  &rbr
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                          &kp J         &kp L          &kp U            &kp Y         &kp SEMI         &mt BSLH PIPE
+  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                          &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
+  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp LMETA(LSHFT(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+                                  &lbr          &none         &kp BSPC      &kp SPACE    &mo LOWER              &mo RAISE  &kp ENTER     &kp TAB        &mt UNDER MINUS  &rbr
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
         };
@@ -328,10 +328,10 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
-  &trans    &trans      &trans       &trans          &trans        &trans                                       &kp DOWN    &kp RIGHT      &kp END     &trans    &trans      &trans
-  &trans    &kp EXCL    &kp AT       &kp HASH        &kp DOLLAR    &kp PERCENT                                  &kp CARET   &kp AMPERSAND  &kp STAR    &kp LPAR  &kp RPAR    &trans
-  &trans    &trans      &trans       &trans          &trans        &trans           &trans            &trans    &kp UP      &kp LEFT       &kp HOME    &trans    &trans      &trans
-                            &trans         &trans       &trans        &trans        &trans            &trans    &trans    &trans      &trans     &trans
+  &trans    &trans      &trans       &trans          &trans             &trans                                    &kp DOWN    &kp RIGHT      &kp END     &trans    &trans      &trans
+  &trans    &kp EXCL    &hml LALT AT &hml LCTRL HASH &hml LSHFT DOLLAR  &kp PERCENT                               &kp CARET   &hmr LSHFT AMPERSAND  &hmr LCTRL STAR    &hmr LALT LPAR  &kp RPAR    &trans
+  &trans    &trans      &trans       &trans          &trans             &trans        &trans            &trans    &kp UP      &kp LEFT       &kp HOME    &trans    &trans      &trans
+                        &trans       &trans          &trans             &trans        &trans            &trans    &trans      &trans         &trans      &trans
 //                       +------------|--------------|------------|--------------|-------------+    +--------|----------|----------|-----------|---------+                       //
             >;
 
