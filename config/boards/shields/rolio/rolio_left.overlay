@@ -1,6 +1,7 @@
 #include "rolio.dtsi"
 
 &kscan0 {
+    wakeup-source;
     col-gpios
         = <&pro_micro 19 GPIO_ACTIVE_HIGH>
         , <&pro_micro 18 GPIO_ACTIVE_HIGH>
