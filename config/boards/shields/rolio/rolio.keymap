@@ -323,7 +323,7 @@
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
   &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                          &kp J         &kp L          &kp U            &kp Y         &kp SEMI         &mt BSLH PIPE
   &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                          &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp LC(LMETA(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+  &none             &kp Z         &kp X         &mt RC(C) C   &kp D         &mt RC(V) V  &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
                                   &lbr          &none         &kp BSPC      &kp SPACE    &mo LOWER              &mo RAISE  &kp ENTER     &kp TAB        &mt UNDER MINUS  &rbr
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
