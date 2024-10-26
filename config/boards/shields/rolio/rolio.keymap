@@ -70,13 +70,14 @@
             tapping-term-ms = <300>;
             bindings = <&mt RBRC RBKT>, <&kp RPAR>;
         };
-        //// Backspace with Del
-        //backdel: backspace_del {
-        //    compatible = "zmk,behavior-mod-morph";
-        //    #binding-cells = <0>;
-        //    bindings = <&kp BSPC>, <&kp DEL>;
-        //    mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LCTRL|MOD_RCTRL)>;
-        //};
+        // Backspace with Del
+        backdel: backspace_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT)>;
+            // mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LCTRL|MOD_RCTRL)>;
+        };
         // // Toggle Numbers layer
         // td1: tap_dance_1 {
         //     compatible = "zmk,behavior-tap-dance";
