@@ -68,7 +68,7 @@
             label = "RIGHT_BRACKETS";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&kp RBKT>, <&kp LBRC>;
+            bindings = <&kp RBKT>, <&kp RBRC>;
         };
         // Backspace with Del
         backdel: backspace_del {
