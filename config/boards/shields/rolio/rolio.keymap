@@ -60,7 +60,7 @@
             label = "LEFT_BRACKETS";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mt LBRC LBKT>, <&kp LPAR>;
+            bindings = <&kp LBKT>, <&kp LBRC>;
         };
         // Right brackets and parentheses
         rbr: right_brackets {
@@ -68,7 +68,7 @@
             label = "RIGHT_BRACKETS";
             #binding-cells = <0>;
             tapping-term-ms = <300>;
-            bindings = <&mt RBRC RBKT>, <&kp RPAR>;
+            bindings = <&kp RBKT>, <&kp LBRC>;
         };
         // Backspace with Del
         backdel: backspace_del {
@@ -330,10 +330,10 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt BSLH PIPE
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt UNDER MINUS
   &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                      &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
   &caps_word        &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt LS(INS) V &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
-                                  &lbr          &none         &backdel      &kp SPACE      &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &mt UNDER MINUS  &rbr
+                                  &lbr          &none         &backdel      &kp SPACE      &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &mt BSLH PIPE    &rbr
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
         };
