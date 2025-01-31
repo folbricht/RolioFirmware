@@ -331,7 +331,7 @@
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
   &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt UNDER MINUS
-  &kp ESC           &hml LGUI A   &hml LALT R   &hml LCTRL S  &hml LSHFT T  &kp G                                      &kp M         &hmr LSHFT N   &hmr LCTRL E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
+  &kp ESC           &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G                                      &kp M         &hmr LCTRL N   &hmr LSHFT E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
   &caps_word        &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt LS(INS) V &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
                                   &lbr          &none         &backdel      &kp SPACE      &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &mt BSLH PIPE    &rbr
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
@@ -344,7 +344,7 @@
             bindings = <
 //-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
   &trans    &trans      &trans       &trans          &trans             &trans                                    &kp DOWN    &kp RIGHT      &kp END     &trans    &trans      &trans
-  &trans    &kp EXCL    &hml LALT AT &hml LCTRL HASH &hml LSHFT DOLLAR  &kp PERCENT                               &kp CARET   &hmr LSHFT AMPERSAND  &hmr LCTRL STAR    &hmr LALT LPAR  &kp RPAR    &trans
+  &trans    &kp EXCL    &hml LALT AT &hml LSHFT HASH &hml LCTRL DOLLAR  &kp PERCENT                               &kp CARET   &hmr LCTRL AMPERSAND  &hmr LSHFT STAR    &hmr LALT LPAR  &kp RPAR    &trans
   &trans    &trans      &trans       &trans          &trans             &trans        &trans            &trans    &kp UP      &kp LEFT       &kp HOME    &trans    &trans      &trans
                         &trans       &trans          &trans             &trans        &trans            &trans    &trans      &trans         &trans      &trans
 //                       +------------|--------------|------------|--------------|-------------+    +--------|----------|----------|-----------|---------+                       //
