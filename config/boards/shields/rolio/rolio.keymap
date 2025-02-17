@@ -54,38 +54,22 @@
           //hold-trigger-key-positions = <KEYS_L KEYS_T>;
         };
 
-        // Left brackets and parentheses
-        // lbr: left_brackets {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "LEFT_BRACKETS";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <300>;
-        //     bindings = <&kp LBKT>, <&kp LBRC>;
-        // };
-        // // Right brackets and parentheses
-        // rbr: right_brackets {
-        //     compatible = "zmk,behavior-tap-dance";
-        //     label = "RIGHT_BRACKETS";
-        //     #binding-cells = <0>;
-        //     tapping-term-ms = <300>;
-        //     bindings = <&kp RBKT>, <&kp RBRC>;
-        // };
-        // // Backspace with Del
-        // backdel: backspace_del {
-        //     compatible = "zmk,behavior-mod-morph";
-        //     #binding-cells = <0>;
-        //     bindings = <&kp BSPC>, <&kp DEL>;
-        //     mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
-        // };
-        // // Mod-Tap but with the tap preferred, usefull for clipboard operations for example
-        // tmt: tap_prefered_mt {
-        //     compatible = "zmk,behavior-hold-tap";
-        //     #binding-cells = <2>;
-        //     flavor = "tap-preferred";
-        //     tapping-term-ms = <200>;
-        //     quick-tap-ms = <200>;
-        //     bindings = <&kp>, <&kp>;
-        // };
+        // Backspace with Del
+        backdel: backspace_del {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp BSPC>, <&kp DEL>;
+            mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT)>;
+        };
+        // Mod-Tap but with the tap preferred, usefull for clipboard operations for example
+        tmt: tap_prefered_mt {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            quick-tap-ms = <200>;
+            bindings = <&kp>, <&kp>;
+        };
         // // Toggle Numbers layer
         // td1: tap_dance_1 {
         //     compatible = "zmk,behavior-tap-dance";
