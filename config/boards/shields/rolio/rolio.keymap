@@ -314,9 +314,9 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt UNDER MINUS
+  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt PLUS EQUAL
   &kp ESC           &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G                                      &kp M         &hmr LCTRL N   &hmr LSHFT E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &caps_word        &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt LS(INS) V &kp LG(LS(N4))   &kp F17    &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt PLUS EQUAL
+  &caps_word        &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt LS(INS) V &kp LG(LS(N4))   &kp none   &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt UNDER MINUS
                                   &mt LBRC LBKT &none         &backdel      &kp SPACE      &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &mt BSLH PIPE    &mt RBRC RBKT
 //                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
             >;
