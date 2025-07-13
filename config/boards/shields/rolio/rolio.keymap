@@ -305,7 +305,6 @@
         // };
     };
 
-
     keymap {
         compatible = "zmk,keymap";
 
