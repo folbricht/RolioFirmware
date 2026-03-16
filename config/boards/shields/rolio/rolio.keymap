@@ -312,12 +312,10 @@
             label = "Base";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-//--------------------------------------------------------------------------------+                  +--------------------------------------------------------------------------------------------//
-  &mt TILDE GRAVE   &kp Q         &kp W         &kp F         &kp P         &kp B                                      &kp J         &kp L          &kp U            &kp Y         &mt COLON SEMI   &mt PLUS EQUAL
-  &kp ESC           &hml LGUI A   &hml LALT R   &hml LSHFT S  &hml LCTRL T  &kp G                                      &kp M         &hmr LCTRL N   &hmr LSHFT E     &hmr LALT I   &hmr RGUI O      &mt DQT SQT
-  &caps_word        &kp Z         &kp X         &tmt RC(C) C  &kp D         &tmt LS(INS) V &none   &kp LG(LS(N4))      &kp K         &kp H          &mt LT COMMA     &mt GT DOT    &mt QMARK SLASH  &mt UNDER MINUS
-                                  &none         &none         &backdel      &kp SPACE      &mo LOWER        &mo RAISE  &kp ENTER     &kp TAB        &none            &none
-//                               +----------|-----------|----------|--------------------+             +-----------|-------|--------|-----------|---------+                      //
+  &mt TILDE GRAVE  &kp Q        &kp W        &kp F         &kp P         &kp B                                  &kp J      &kp L         &kp U         &kp Y        &mt COLON SEMI   &mt PLUS EQUAL
+  &kp ESC          &hml LGUI A  &hml LALT R  &hml LSHFT S  &hml LCTRL T  &kp G                                  &kp M      &hmr LCTRL N  &hmr LSHFT E  &hmr LALT I  &hmr RGUI O      &mt DQT SQT
+  &caps_word       &kp Z        &kp X        &tmt RC(C) C  &kp D         &tmt LS(INS) V  &none  &kp LG(LS(N4))  &kp K      &kp H         &mt LT COMMA  &mt GT DOT   &mt QMARK SLASH  &mt UNDER MINUS
+                   &none        &none        &backdel      &kp SPACE     &mo LOWER                              &mo RAISE  &kp ENTER     &kp TAB       &none        &none
             >;
         };
 
@@ -325,12 +323,10 @@
             label = "Lower";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-//-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
-  &trans    &trans      &trans       &trans          &kp PIPE           &kp BSLH                                  &kp DOWN    &kp RIGHT             &kp END            &kp LBKT        &kp RBKT      &trans
-  &trans    &kp EXCL    &hml LALT AT &hml LSHFT HASH &hml LCTRL DOLLAR  &kp PERCENT                               &kp CARET   &hmr LCTRL AMPERSAND  &hmr LSHFT STAR    &hmr LALT LPAR  &kp RPAR      &trans
-  &trans    &trans      &trans       &trans          &trans             &trans        &trans            &trans    &kp UP      &kp LEFT              &kp HOME           &kp LBRC        &kp RBRC      &trans
-                        &trans       &trans          &trans             &trans        &trans            &trans    &trans      &trans                &trans             &trans
-//                       +------------|--------------|------------|--------------|-------------+    +--------|----------|----------|-----------|---------+                       //
+  &trans  &trans    &trans        &trans           &kp PIPE           &kp BSLH                     &kp DOWN   &kp RIGHT             &kp END          &kp LBKT        &kp RBKT  &trans
+  &trans  &kp EXCL  &hml LALT AT  &hml LSHFT HASH  &hml LCTRL DOLLAR  &kp PERCENT                  &kp CARET  &hmr LCTRL AMPERSAND  &hmr LSHFT STAR  &hmr LALT LPAR  &kp RPAR  &trans
+  &trans  &trans    &trans        &trans           &trans             &trans       &trans  &trans  &kp UP     &kp LEFT              &kp HOME         &kp LBRC        &kp RBRC  &trans
+          &trans    &trans        &trans           &trans             &trans                       &trans     &trans                &trans           &trans          &trans
             >;
 
         };
@@ -339,12 +335,10 @@
             label = "Raise";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-//-------------------------------------------------------------------------------+                      +----------------------------------------------------------------------------//
-  &trans    &trans     &trans       &trans       &trans     &trans                                          &trans   &trans   &trans   &trans     &trans      &trans
-  &trans    &kp N1     &kp N2       &kp N3       &kp N4     &kp N5                                          &kp N6   &kp N7   &kp N8   &kp N9     &kp N0      &trans
-  &trans    &trans     &trans       &trans       &trans     &trans   &trans                        &trans   &trans   &trans   &trans   &trans     &trans      &trans
-                       &trans       &trans       &trans     &trans   &trans                        &trans   &trans   &trans   &trans   &trans
-//                     +----------------|-----------------|----------|-----------|--------+    +--------|----------|----------------|----------|----------+                          //
+  &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                  &kp N6  &kp N7  &kp N8  &kp N9  &kp N0  &trans
+  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+          &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
 
@@ -352,12 +346,10 @@
             label = "Settings";
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
-//---------------------------------------------------------------------------------------+                        +------------------------------------------------------------------//
-  &out OUT_TOG   &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3    &bt BT_SEL 4                           &bt BT_CLR     &trans     &trans     &trans     &trans     &trans
-  &kp F1         &kp F2         &kp F3         &kp F4         &kp F5          &kp F6                                 &kp F7     &kp F8     &kp F9     &kp F10     &kp F11     &kp F12
-  &trans         &trans         &trans         &trans         &trans          &trans       &trans         &trans     &trans     &trans     &trans     &trans     &trans     &trans
-                               &trans          &trans         &trans          &trans       &trans         &trans     &trans     &trans     &trans     &trans
-//                         +--------------|--------------|--------------|----------------|--------+     +----------|---------|----------|----------|----------+                      //
+  &out OUT_TOG  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                  &bt BT_CLR  &trans  &trans  &trans   &trans   &trans
+  &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6                        &kp F7      &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+  &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans      &trans  &trans  &trans   &trans   &trans
+                &trans        &trans        &trans        &trans        &trans                        &trans      &trans  &trans  &trans   &trans
             >;
         };
 
