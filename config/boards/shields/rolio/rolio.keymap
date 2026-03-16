@@ -326,7 +326,7 @@
             sensor-bindings = <&inc_dec_kp UP DOWN &inc_dec_kp LEFT RIGHT>;
             bindings = <
 //-------------------------------------------------------------------------------+                           +-------------------------------------------------------------------//
-  &trans    &trans      &trans       &trans          &kp BSLH           &kp PIPE                                  &kp DOWN    &kp RIGHT             &kp END            &kp LBKT        &kp RBKT      &trans
+  &trans    &trans      &trans       &trans          &kp PIPE           &kp BSLH                                  &kp DOWN    &kp RIGHT             &kp END            &kp LBKT        &kp RBKT      &trans
   &trans    &kp EXCL    &hml LALT AT &hml LSHFT HASH &hml LCTRL DOLLAR  &kp PERCENT                               &kp CARET   &hmr LCTRL AMPERSAND  &hmr LSHFT STAR    &hmr LALT LPAR  &kp RPAR      &trans
   &trans    &trans      &trans       &trans          &trans             &trans        &trans            &trans    &kp UP      &kp LEFT              &kp HOME           &kp LBRC        &kp RBRC      &trans
                         &trans       &trans          &trans             &trans        &trans            &trans    &trans      &trans                &trans             &trans
